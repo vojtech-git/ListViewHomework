@@ -67,6 +67,7 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Human.cs" />
     <Compile Include="ListViewWindow.xaml.cs">
       <DependentUpon>ListViewWindow.xaml</DependentUpon>
     </Compile>
