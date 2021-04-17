@@ -10,23 +10,21 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace ListViewHomework
 {
-    public partial class MainWindow : Window
+    public partial class ListViewWindow : Window
     {
-        public MainWindow()
+        public ListViewWindow()
         {
             InitializeComponent();
-            
         }
 
-        private void ShowListButton_Click(object sender, RoutedEventArgs e)
+        private void SwitchWindowButton_Click(object sender, RoutedEventArgs e)
         {
-            ListViewWindow listViewWindow = new ListViewWindow();
-            listViewWindow.ShowDialog();
+            MainWindow mainWindow = new MainWindow();
+            this.Close();
         }
     }
 }
